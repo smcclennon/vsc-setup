@@ -79,11 +79,11 @@ for extension in vscode_extensions:
 # 'package[0]' == package ID
 # 'package[1]' == package description
 # '--user' install into user data folder (not public program files)
-# '--quiet' hide spammy loading bars, only show warning, error, and critical log levels
+# '--quiet --quiet' hide info and warning log levels. show error and critical log levels
 for package in python_packages:
     print(f'\nInstalling Python package: {package[0]}')
     print(f'Description: {package[1]}')
-    os.system(f'python -m pip install -U {package[0]} --user --quiet')
+    os.system(f'python -m pip install -U {package[0]} --user --quiet --quiet')
 
 
 
