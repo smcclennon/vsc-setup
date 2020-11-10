@@ -1,9 +1,31 @@
-# Set up vs-code for python development
-# github.com/smcclennon
+# VSCode Setup
+# Set up Visual Studio Code with essential extensions for development in various languages
+# github.com/smcclennon/vsc-setup
 
 
 
 import os
+
+
+
+
+
+# Colours! (just aesthetic)
+# More colour codes: https://gist.github.com/smcclennon/a42e2e3819a01d2429a430fb57d545c0
+colours = dict(  # ANSI colour codes
+    BROWN = "\033[0;33m",
+    CYAN = "\033[0;36m",
+    END = "\033[0m"
+)
+
+def clr(body, colour_code):
+    colour_code = colour_code.upper()
+    if colour_code in colours:
+        return colours[colour_code]+body+colours["END"]
+    else:
+        return body
+
+
 
 
 
@@ -27,7 +49,8 @@ python_packages = [
 
 
 
-print('Set up Visual Studio Code for Python development with one click\n')
+print('Set up Visual Studio Code with essential extensions for development in various languages')
+print('Learn more: github.com/smcclennon/vsc-setup\n')
 
 
 
@@ -66,34 +89,42 @@ for package in python_packages:
 
 
 
-print('''\n\n\n\n\
+print(f'''\n\n\n\n\
 All done!
 
 What to do now:
-1)  Right click your python file and click "Open with Code"
+1)  Right click your HTML file and click "Open with Code"
     OR open VS Code and drag your file into the window
-    OR open VS code and press CTRL+O, then select the python file you want to edit/run
+    OR open VS code and press CTRL+O, then select the HTML file you want to edit/run
 
-2)  [Optional] Press CTRL+K CTRL+T, and then select the theme you want to apply (my favourite is 'Palenight italic')
-
-3)  Edit your python file to your hearts content. If you want to know what a module does, (such as print()),
-    simply hover over it and you'll be presented with loads of information and options you can choose from
-
-4)  When you're ready to try running your code (it is very rare for your code to work first time, don't worry),
-    simply press F5 and you should see a powershell terminal open up on the bottom of your VS code window
-    running your code
+2)  Press CTRL+K CTRL+T, and then select the theme you want to apply
+    (my favourite is 'Palenight italic')
 
 
-TLDR;
-1) Right click your python file and press "Open with code"
-2) Press CTRL+K CTRL+O to choose a theme (my favourite is 'Palenight Italic')
-3) Hover over modules such as print() to learn more about them
-4) Press F5 to run your code
+
+To learn more about the true power of the extensions you just installed, visit the GitHub Repo!
+
+GitHub Repo: {clr('github.com/smcclennon/vsc-setup', 'brown')}
 ''')
 
 
 
-input('     > Press enter to launch Visual Studio Code <\n               Made with <3 by Shiraz\n')
+
+
+# Animate the print of a separator -------
+from time import sleep
+print('     ', end='')
+for i in range(45):
+    print('-', end='', flush=True)
+    sleep(0.001)
+
+
+
+print('\n     > Press enter to launch Visual Studio Code <')
+sleep(0.1)
+print(f'               {clr("Made with", "cyan")} <3 {clr("by Shiraz", "cyan")}')
+input('')
+
 
 
 print('Launching Visual Studio Code...')

@@ -1,5 +1,6 @@
-# Set up vs-code for HTML development
-# github.com/smcclennon
+# VSCode Setup
+# Set up Visual Studio Code with essential extensions for development in various languages
+# github.com/smcclennon/vsc-setup
 
 
 
@@ -7,21 +8,42 @@ import os
 
 
 
+
+
+# Colours! (just aesthetic)
+# More colour codes: https://gist.github.com/smcclennon/a42e2e3819a01d2429a430fb57d545c0
+colours = dict(  # ANSI colour codes
+    BROWN = "\033[0;33m",
+    CYAN = "\033[0;36m",
+    END = "\033[0m"
+)
+
+def clr(body, colour_code):
+    colour_code = colour_code.upper()
+    if colour_code in colours:
+        return colours[colour_code]+body+colours["END"]
+    else:
+        return body
+
+
+
+
+
 # VS Code extensions to install
 # [Extension ID, Extension description]
 vscode_extensions = [
-    ['tht13.html-preview-vscode', 'Provides ability to preview HTML documents'],
-    ['naumovs.color-highlight', 'Highlight web colours in your editor (Ctrl+Shift+V)'],
-    ['pranaygp.vscode-css-peek', 'Peak into css ID and class strings'],
-    ['whizkydee.material-palenight-theme', 'My favourite theme to code with in VS Code']
+    ['tht13.html-preview-vscode', 'Preview HTML documents'],
+    ['naumovs.color-highlight', 'Highlight web colours (Ctrl+Shift+V)'],
+    ['pranaygp.vscode-css-peek', 'Peak into css classes'],
+    ['whizkydee.material-palenight-theme', 'Beautiful purple theme']
 ]
 
 
 
 
 
-
-print('Set up Visual Studio Code for HTML development with one click\n')
+print('Set up Visual Studio Code with essential extensions for development in various languages')
+print('Learn more: github.com/smcclennon/vsc-setup\n')
 
 
 
@@ -44,8 +66,7 @@ for extension in vscode_extensions:
 
 
 
-
-print('''\n\n\n\n\
+print(f'''\n\n\n\n\
 All done!
 
 What to do now:
@@ -53,24 +74,34 @@ What to do now:
     OR open VS Code and drag your file into the window
     OR open VS code and press CTRL+O, then select the HTML file you want to edit/run
 
-2)  [Optional] Press CTRL+K CTRL+T, and then select the theme you want to apply (my favourite is 'Palenight italic')
-
-3)  Edit your HTML file to your hearts content. If you want to know what a module does, (such as print()),
-    simply hover over it and you'll be presented with loads of information and options you can choose from
-
-4)  When you want to preview your HTML code, press CTRL+SHIFT+V or right click the tab in VSC and press 'Open Preview'
+2)  Press CTRL+K CTRL+T, and then select the theme you want to apply
+    (my favourite is 'Palenight italic')
 
 
-TLDR;
-1) Right click your HTML file and press "Open with code"
-2) Press CTRL+K CTRL+O to choose a theme (my favourite is 'Palenight Italic')
-3) Hover over CSS classes to peak them
-4) Press CTRL+SHIFT+V to open the HTML preview
+
+To learn more about the true power of the extensions you just installed, visit the GitHub Repo!
+
+GitHub Repo: {clr('github.com/smcclennon/vsc-setup', 'brown')}
 ''')
 
 
 
-input('     > Press enter to launch Visual Studio Code <\n               Made with <3 by Shiraz\n')
+
+
+# Animate the print of a separator -------
+from time import sleep
+print('     ', end='')
+for i in range(45):
+    print('-', end='', flush=True)
+    sleep(0.001)
+
+
+
+print('\n     > Press enter to launch Visual Studio Code <')
+sleep(0.1)
+print(f'               {clr("Made with", "cyan")} <3 {clr("by Shiraz", "cyan")}')
+input('')
+
 
 
 print('Launching Visual Studio Code...')
