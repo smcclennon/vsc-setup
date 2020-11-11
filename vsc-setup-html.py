@@ -4,7 +4,7 @@
 
 
 
-import os
+import os  # Shell commands
 
 
 
@@ -17,6 +17,8 @@ colours = dict(  # ANSI colour codes
     CYAN = "\033[0;36m",
     END = "\033[0m"
 )
+
+
 
 def clr(body, colour_code):
     colour_code = colour_code.upper()
@@ -57,8 +59,10 @@ print('Learn more: github.com/smcclennon/vsc-setup\n')
 # 'extension[0]' == extension ID
 # 'extension[1]' == extension description
 # '--force' avoid any prompts asking you if you're sure
+position = 0
 for extension in vscode_extensions:
-    print(f'\nInstalling VS Code extension: {extension[0]}...')
+    position += 1  # Increment by 1
+    print(f'\nInstalling VS Code extension: {extension[0]}... ({position}/{len(vscode_extensions)})')
     print(f'Description: {extension[1]}')
     os.system(f'code>nul --install-extension {extension[0]} --force')
 
@@ -70,9 +74,9 @@ print(f'''\n\n\n\n\
 All done!
 
 What to do now:
-1)  Right click your HTML file and click "Open with Code"
+1)  Right click your file and click "Open with Code"
     OR open VS Code and drag your file into the window
-    OR open VS code and press CTRL+O, then select the HTML file you want to edit/run
+    OR open VS code and press CTRL+O, then select the file you want to open
 
 2)  Press CTRL+K CTRL+T, and then select the theme you want to apply
     (my favourite is 'Palenight italic')
