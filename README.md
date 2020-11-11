@@ -20,12 +20,12 @@ The scripts support python 3.6+, and have only been tested on Windows 10.
 
 |Development language|Extensions installed|Why the extension has been deemed *essential*
 |:-|:-|:-|
-|[**`Python`**](vsc-setup-python.py)|[ms-python.python][vscm_ms-python.python]|Linting (incorrect syntax highlighting) and debugging for Python</br></br>To debug (run) your Python code, press `F5` whilst viewing your code and a terminal will pop up at the bottom of your screen with your running code output|
+|[**`Python`**](https://raw.githubusercontent.com/smcclennon/vsc-setup/main/vsc-setup-python.py)|[ms-python.python][vscm_ms-python.python]|Linting (incorrect syntax highlighting) and debugging for Python</br></br>To debug (run) your Python code, press `F5` whilst viewing your code and a terminal will pop up at the bottom of your screen with your running code output|
 ||[CoenraadS.bracket-pair-colorizer-2][vscm_CoenraadS.bracket-pair-colorizer-2]|Colourise brackets (amazing for when you (nest(brackets)))|
 ||[oderwat.indent-rainbow][vscm_oderwat.indent-rainbow]|Colourise indents|
 ||[whizkydee.material-palenight-theme][vscm_whizkydee.material-palenight-theme]|My favourite theme to code with in VS Code (juicy and purple)</br></br>To change your theme in VS Code, press `CTRL+K` `CTRL+T`, and you will be presented with a list of installed themes|
 ||||
-|[**`HTML`**](vsc-setup-html.py)|[tht13.html-preview-vscode][vscm_tht13.html-preview-vscode]|Provides ability to preview HTML documents **live**</br></br>To open the HTML preview, whilst viewing your HTML document in VS Code, press `Ctrl+Shift+V` (or right click the tab > Open Preview).</br>A new tab will open in VS Code with a **live** preview of your code. You can drag the tab to the side of VS Code to split screen yout HTML code and preview|
+|[**`HTML`**](https://raw.githubusercontent.com/smcclennon/vsc-setup/main/vsc-setup-html.py)|[tht13.html-preview-vscode][vscm_tht13.html-preview-vscode]|Provides ability to preview HTML documents **live**</br></br>To open the HTML preview, whilst viewing your HTML document in VS Code, press `Ctrl+Shift+V` (or right click the tab > Open Preview).</br>A new tab will open in VS Code with a **live** preview of your code. You can drag the tab to the side of VS Code to split screen yout HTML code and preview|
 ||[naumovs.color-highlight][vscm_naumovs.color-highlight]|Highlight web colours in your editor|
 ||[pranaygp.vscode-css-peek][vscm_pranaygp.vscode-css-peek]|Peak into css classes by hovering over them (in HTML)|
 ||[whizkydee.material-palenight-theme][vscm_whizkydee.material-palenight-theme]|My favourite theme to code with in VS Code (juicy and purple)</br></br>To change your theme in VS Code, press `CTRL+K` `CTRL+T`, and you will be presented with a list of installed themes|
