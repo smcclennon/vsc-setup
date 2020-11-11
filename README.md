@@ -44,4 +44,6 @@ This was inconvenient enough to discourage students from using VS Code, especial
 
 **Because of this, I created this repository, where python scripts which will run a few OS commands and install extensions I believe are either necessary for, or greatly improve development in Visual Studio Code.**
 
+## Screenshot
+![vsc-setup-python](https://smcclennon.github.io/assets/images/screenshots/vsc-setup/vsc-setup-python.png)
 *Created with <3 by Shiraz, using Python 3.9 on Windows 10*
