@@ -6,7 +6,7 @@ To download, click on the `language` you would like to install, and then press C
 
 *For example: Click on `Python` (you will be sent to the RAW page of the file, simply pure code), then press CTRL+S, and save the code.*
 
-The scripts support python 3.6+, and have only been tested on Windows 10.
+The scripts support python 3.6+, and have been tested on Windows 10 and Fedora 33.
 
 [vscm_ms-python.python]: https://marketplace.visualstudio.com/items?itemName=ms-python.python
 [vscm_CoenraadS.bracket-pair-colorizer-2]: https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2
@@ -47,3 +47,8 @@ This was inconvenient enough to discourage students from using VS Code, especial
 ## Screenshot
 ![vsc-setup-python](https://smcclennon.github.io/assets/images/screenshots/vsc-setup/vsc-setup-python.png)
 *Created with <3 by Shiraz, using Python 3.9 on Windows 10*
+
+## Visual Studio Code: Keyboard Shortcuts
+- [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+- [MacOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+- [Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
