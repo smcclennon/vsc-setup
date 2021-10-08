@@ -14,6 +14,7 @@ The scripts support python 3.6+, and have been tested on Windows 10 and Fedora 3
 [vscm_whizkydee.material-palenight-theme]: https://marketplace.visualstudio.com/items?itemName=whizkydee.material-palenight-theme
 
 [vscm_tht13.html-preview-vscode]: https://marketplace.visualstudio.com/items?itemName=tht13.html-preview-vscode
+[vscm_ritwickdey.liveserver]: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 [vscm_naumovs.color-highlight]: https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight
 [vscm_pranaygp.vscode-css-peek]: https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
 
@@ -26,6 +27,7 @@ The scripts support python 3.6+, and have been tested on Windows 10 and Fedora 3
 ||[whizkydee.material-palenight-theme][vscm_whizkydee.material-palenight-theme]|My favourite theme to code with in VS Code (juicy and purple)</br></br>To change your theme in VS Code, press `CTRL+K` `CTRL+T`, and you will be presented with a list of installed themes|
 ||||
 |[**`HTML`**](https://raw.githubusercontent.com/smcclennon/vsc-setup/main/vsc-setup-html.py)|[tht13.html-preview-vscode][vscm_tht13.html-preview-vscode]|Provides ability to preview HTML documents **live**</br></br>To open the HTML preview, whilst viewing your HTML document in VS Code, press `Ctrl+Shift+V` (or right click the tab > Open Preview).</br>A new tab will open in VS Code with a **live** preview of your code. You can drag the tab to the side of VS Code to split screen yout HTML code and preview|
+||[ritwickdey.liveserver][vscm_ritwickdey.liveserver]|Highlight web colours in your editor|
 ||[naumovs.color-highlight][vscm_naumovs.color-highlight]|Highlight web colours in your editor|
 ||[pranaygp.vscode-css-peek][vscm_pranaygp.vscode-css-peek]|Peak into css classes by hovering over them (in HTML)|
 ||[whizkydee.material-palenight-theme][vscm_whizkydee.material-palenight-theme]|My favourite theme to code with in VS Code (juicy and purple)</br></br>To change your theme in VS Code, press `CTRL+K` `CTRL+T`, and you will be presented with a list of installed themes|
