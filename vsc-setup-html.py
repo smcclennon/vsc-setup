@@ -35,7 +35,7 @@ def clr(body, colour_code):
 # [Extension ID, Extension description]
 vscode_extensions = [
     ['tht13.html-preview-vscode', 'Preview HTML documents'],
-    ['ritwickdey.liveserver', 'Create a local server with real-time updating to emulate webserver environment']
+    ['ritwickdey.liveserver', 'Create a local server with real-time updating to emulate webserver environment'],
     ['naumovs.color-highlight', 'Highlight web colours (Ctrl+Shift+V)'],
     ['pranaygp.vscode-css-peek', 'Peak into css classes'],
     ['whizkydee.material-palenight-theme', 'Beautiful purple theme']
