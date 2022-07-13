@@ -52,17 +52,7 @@ print('Learn more: github.com/smcclennon/vsc-setup\n')
 
 
 
-# Install VS Code extensions
-# Command breakdown:
-# 'code' call the Visual Studio Code executable
-# '>nul' Windows shell feature to prevent any output (VS Code does not have a --quiet flag)
-# '--install-extension' specify the extension ID to install
-# 'extension[0]' == extension ID
-# 'extension[1]' == extension description
-# '--force' avoid any prompts asking you if you're sure
-position = 0
-for extension in vscode_extensions:
-    position += 1  # Increment by 1
+for position, extension in enumerate(vscode_extensions, start=1):
     print(f'\nInstalling VS Code extension: {extension[0]}... ({position}/{len(vscode_extensions)})')
     print(f'Description: {extension[1]}')
     os.system(f'code>nul --install-extension {extension[0]} --force')
@@ -96,7 +86,7 @@ GitHub Repo: {clr('github.com/smcclennon/vsc-setup', 'brown')}
 # Animate the print of a separator -------
 from time import sleep
 print('     ', end='')
-for i in range(45):
+for _ in range(45):
     print('-', end='', flush=True)
     sleep(0.001)
 
